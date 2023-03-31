@@ -1,7 +1,13 @@
-const express = require('express')
-const app = express()
-app.all('/', (req, res) => {
-    console.log("Just got a request!")
-    res.send('Yo!')
-})
-app.listen(process.env.PORT || 3000)
+const express = require("express");
+const cors = require("cors");
+const router = require("./src/routes/");
+
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+app.use("/", router);
+
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => console.debug(`Server running on port: ${port}`));

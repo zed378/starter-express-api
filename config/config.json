@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "freedb_zedth",
+    "password": "T@wNG2w&u6qU@YS",
+    "database": "freedb_wedding",
+    "host": "sql.freedb.tech",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "freedb_zedth",
+    "password": "T@wNG2w&u6qU@YS",
+    "database": "freedb_wedding",
+    "host": "sql.freedb.tech",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "freedb_zedth",
+    "password": "T@wNG2w&u6qU@YS",
+    "database": "freedb_wedding",
+    "host": "sql.freedb.tech",
+    "port": 3306,
+    "dialect": "mysql"
+  }
+}

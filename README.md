@@ -1,11 +1,15 @@
-# starter-express-api
+# dayat-wedding
 
-This is the simplest possible nodejs api using express that responds to any request with: 
-```
-Yo!
-```
+## API usage
+### Get Messages
+- method: get
+- url: https://dayat-wedding-production.up.railway.app/api/v1/message
 
-### Deploy it in 7 seconds: 
-
-[![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://deploy.cyclic.app/)
-
+### Add Message
+- method: post
+- url: https://dayat-wedding-production.up.railway.app/api/v1/add
+- body:
+{
+"name": "your name",
+"messages": "your message"
+}
