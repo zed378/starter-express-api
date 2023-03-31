@@ -3,6 +3,7 @@ const { message } = require("../../models");
 exports.getMessage = async (req, res) => {
   try {
     const data = await message.findAll({
+      order: [["id", "DESC"]],
       attributes: {
         exclude: ["createdAt", "updatedAt"],
       },
